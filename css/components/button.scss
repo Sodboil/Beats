@@ -1,0 +1,28 @@
+.button{
+    font-weight: bold;
+    padding: rem(18px) rem(41px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    background: #E01F3D;
+    color: #ffff;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+
+    &:hover{
+        background: #CA1B36;
+    }
+
+    &--transparent{
+        background: transparent;
+        color: #E01F3D;
+        text-transform: none;
+        margin-left: rem(-20px);
+
+        &:hover{
+            background: transparent;
+            color: #000;
+        }
+    }
+}

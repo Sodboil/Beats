@@ -1,0 +1,70 @@
+
+.map__section{
+    height: 100vh;
+    min-height: rem(650px);
+    color: #292929;
+}
+
+.map__container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.map-img{
+    flex: 1 0 auto;
+    height: 100%
+}
+.footer{
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(18px) 0; 
+    
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer_col{
+     @include phones{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(19px);
+    }
+}
+
+.footer__adress{
+    font-size: rem(18px);
+    font-style: normal;
+    margin-bottom: rem(3px);
+
+   @include phones{
+       margin-bottom: rem(12px);
+   }
+}
+
+.social{
+    display: flex;
+}
+
+.social__item{
+    margin-right: rem(10px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.social__link{
+    fill: #B3B3B3;
+    width: rem(24px);
+    height: rem(24px);
+
+    &:hover{
+        fill: #000;
+    }
+}

@@ -1,0 +1,152 @@
+.reviews__section{
+    height: 100vh;
+    min-height: rem(650px);
+    position: relative;
+    &:before{
+        position: absolute;
+        bottom: rem(-28px);
+        left: 7%;
+        content: url("../img/vector-four.png");
+
+    }
+}
+
+.reviews__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reviews__title{
+    font-size: rem(48px);
+    font-weight: bold;
+    margin-bottom: rem(18px);
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.reviews__display{
+    background: #F8FAF9;
+    padding: rem(42px) rem(42px) rem(42px);
+    margin-bottom: rem(15px);
+    overflow: hidden;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: rem(83px);
+        height: rem(83px);
+        background: #Fff;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: rem(-61px);
+    }
+
+    @include tablets{
+        padding: rem(35px) rem(24px) rem(40px);
+    }
+
+}
+
+.reviews__display-inner{
+    display: flex;
+    align-items: center;
+
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.reviews__avatar{
+    width: rem(254px);
+    height: rem(264px);
+
+    @include tablets{
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(32px);
+    }
+}
+
+.reviews__avatar-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews__display-content{
+    flex: 1;
+    margin-left: rem(40px);
+    text-align: left;
+
+    @include tablets{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.reviews__display-title{
+    font-size: rem(24px);
+    font-weight: bold;
+    color: #292929;
+    margin-bottom: rem(25px);
+}
+
+.reviews__display-text{
+    margin-bottom: rem(36px);
+
+    @include tablets{
+        margin-bottom: rem(16px);
+    }
+}
+
+.reviews__display-author{
+    font-size: rem(18px);
+    font-weight: bold;
+    color: #292929;
+}
+
+.reviews__switcher{
+    display: flex;
+    justify-content: center;
+}
+
+.interactive-avatar{
+    width: rem(74px);
+    height: rem(74px);
+    border: rem(4px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: rem(6px);
+    &:last-child{
+        margin-right: 0;
+    }
+    &--active{
+        border-color: #E01F3D
+    }
+    &:hover{
+        border-color: #E01F3D;
+    }
+}
+
+.interactive-avatar__link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+.interactive-avatar__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

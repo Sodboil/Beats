@@ -1,0 +1,176 @@
+.hero__section{
+    background-color: #F5F5F5;
+    height: 100vh;
+    min-height: rem(650px);
+    color: #292929;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        bottom: rem(-28px);
+        right: 10%;
+        content: url("../img/vector-one.png");
+
+    }
+}
+
+.hero__container{
+    background: url(../img/earphone.png) right bottom 30% / 55% auto no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(50px) 0;
+
+    @include tablets{ 
+        background: none;
+    }
+}
+
+.header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu{
+    margin: 0 rem(30px);
+    padding-top: rem(5px);
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    font-family: 'alegreya sans';
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item{
+    margin-right: rem(27px);
+    &:last-child{
+        margin-right: 0;
+    }
+    margin-bottom: rem(10px);
+}
+
+.menu__link{
+    text-decoration: none;
+    font-size: rem(18px);
+    white-space: nowrap;
+}
+
+.phone-number{
+    text-decoration: none;
+    font-size: rem(18px);
+    display: flex;
+    align-items: center;
+}
+
+.hero__phone-number{
+    @include tablets{
+        display: none;
+    }
+}
+
+.phone__icon{
+    fill: #292929;
+    width: rem(14px);
+    height: rem(14px);
+    margin-right: rem(6px);
+    flex-shrink: 0;
+}
+
+.phone__text{
+    white-space: nowrap;
+}
+
+.hero__main{
+    width: 37%;
+
+    @include tablets{
+        width: 95%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &::before{
+            content: "";
+            width: rem(323px);
+            height: rem(323px);    
+            background: url(../img/earphone.png) center center / contain no-repeat;
+            margin-bottom: rem(64px);
+        }
+    }
+}
+
+.hero__title{
+    font-size: rem(48px);
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: rem(22px);
+    text-transform: uppercase;
+
+    @include tablets{
+        padding: 0 5%;
+    }
+
+    @include phones{
+        font-size: rem(34px);
+        padding: 0 12%;
+    }
+}
+
+.hero__text{
+    font-size: rem(21px);
+    margin-bottom: rem(36px);
+    font-family: 'alegreya sans';
+
+    @include tablets{
+        padding: 0 25%;
+    }
+
+    @include phones{
+        font-size: rem(20px);
+        padding: 0 18%;
+    }
+}
+
+.hero_icons{
+    @include tablets{
+        display: none;
+    }
+}
+
+.features{
+    display: flex;
+}
+
+.feature{
+    display: flex;
+}
+
+.features__item{
+    margin-right: rem(10px);
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.feature__icon{
+    fill: #000;
+    width: rem(41px);
+    height: rem(41px);
+    margin-right: rem(11px);
+}
+
+.feature__text{
+    max-width: rem(114px);
+}
