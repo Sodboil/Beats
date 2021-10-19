@@ -1012,7 +1012,6 @@ svg path {
   min-height: 40.625rem;
   background: url(../img/sport.png) 0 0/100% 100% no-repeat;
 }
-
 .slider__container {
   height: 100%;
   display: -webkit-box;
@@ -1023,7 +1022,6 @@ svg path {
           justify-content: flex-end;
   position: relative;
 }
-
 .slider__title {
   position: absolute;
   top: 15%;
@@ -1033,7 +1031,6 @@ svg path {
   font-weight: bold;
   color: white;
 }
-
 .slider__title-color {
   display: block;
 }
@@ -1042,7 +1039,6 @@ svg path {
     display: none;
   }
 }
-
 .slider__title-menu {
   display: none;
 }
@@ -1051,27 +1047,18 @@ svg path {
     display: block;
   }
 }
-
 .slider__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .slider__menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .slider__menu__item--active {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 12.75rem;
-    bottom: 0;
-  }
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 @media screen and (max-width: 480px) {
   .slider__menu__item--active {
@@ -1079,7 +1066,26 @@ svg path {
     z-index: 10;
   }
 }
-
+.slider__menu__item--active > .slider__content {
+  opacity: 1;
+  padding-left: 38px;
+  padding-top: 2.375rem;
+  padding-right: 3.3125rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .slider__menu__item--active > .slider__content {
+    width: 20.3125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__menu__item--active > .slider__content {
+    padding-right: 2.1875rem;
+  }
+}
 .slider__menu__title {
   position: relative;
   width: 6.375rem;
@@ -1091,14 +1097,13 @@ svg path {
   background: #151515;
 }
 .slider__menu__title--red {
-  background: #E01F3C;
+  background: #e01f3c;
 }
 @media screen and (max-width: 480px) {
   .slider__menu__title {
     width: 5.625rem;
   }
 }
-
 .slider__menu__title-text {
   position: absolute;
   font-size: 2.25rem;
@@ -1112,39 +1117,16 @@ svg path {
           transform-origin: 0 0;
   white-space: nowrap;
 }
-
 .slider__content {
-  display: block;
   color: white;
   width: 0;
   padding: 0px;
-  opacity: 1;
   overflow: hidden;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background: rgba(51, 53, 55, 0.9);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-}
-
-.slider__menu__item--active > .slider__content {
-  width: 32.5rem;
-  padding-left: 38px;
-  padding-top: 2.375rem;
-  padding-right: 3.3125rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  .slider__menu__item--active > .slider__content {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider__menu__item--active > .slider__content {
-    padding-right: 2.1875rem;
-  }
 }
 
 .reviews__section {
@@ -1783,3 +1765,4 @@ svg path {
 .modal__content {
   margin-bottom: 0.9375rem;
 }
+/*# sourceMappingURL=main.css.map */

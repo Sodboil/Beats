@@ -1,4 +1,5 @@
 $(".form").submit(e => {
+debugger
     e.preventDefault();
 
     $.fancybox.open({
