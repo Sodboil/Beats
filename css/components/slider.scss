@@ -1,5 +1,134 @@
-.slider{
+.slider__section {
     height: 100vh;
     min-height: rem(650px);
-    background: #000000;
+    background: url(../img/sport.png) 0 0 / 100% 100% no-repeat;
+
 }
+
+.slider__container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.slider__title {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: rem(48px);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.slider__title-color{
+    display: block;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.slider__title-menu{
+    display: none;
+
+    @include tablets{
+        display: block;
+    }
+}
+
+.slider__menu {
+    display: flex;
+}
+
+.slider__menu__item {
+    display: flex;
+    cursor: pointer;
+
+    @include tablets {
+        &--active {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: rem(204px);
+            bottom: 0;
+
+        }
+    }
+
+    @include phones{
+        &--active { 
+            right: 0;
+            z-index: 10;
+        }
+    }
+
+
+}
+
+.slider__menu__title {
+    position: relative;
+    width: rem(102px);
+
+    &--grey {
+        background: #999999;
+    }
+
+    &--black {
+        background: #151515;
+    }
+
+    &--red {
+        background: #E01F3C;
+    }
+
+    @include phones{
+        width: rem(90px);
+    }
+}
+
+.slider__menu__title-text {
+    position: absolute;
+    font-size: rem(36px);
+    font-weight: bold;
+    color: white;
+    left: 50%;
+    bottom: rem(30px);
+    transform: rotate(-90deg) translate(-15%, -50%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+}
+
+.slider__content {
+    display: block;
+    color: white;
+    width: 0;
+    padding: 0px;
+    opacity: 1;
+    overflow: hidden;
+    transition: width .3s ;
+    background: rgba(51, 53, 55, 0.9);
+    backdrop-filter: blur(10px);
+
+   
+}
+
+
+.slider__menu__item--active > .slider__content{
+        width: rem(520px);
+        padding-left: 38px;
+        padding-top: rem(38px);
+        padding-right: rem(53px);
+        box-sizing: border-box;
+        opacity: 1; 
+        
+        @include tablets {
+            width: 100%;
+    }
+
+        @include phones{
+            padding-right: rem(35px);
+        }
+}
+

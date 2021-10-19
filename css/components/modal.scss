@@ -1,0 +1,14 @@
+.modal{
+    display: none;
+}
+.modal__container{
+    background: rgb(32, 27, 27);
+    padding: rem(35px) rem(60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__content{
+    margin-bottom: rem(15px);
+}

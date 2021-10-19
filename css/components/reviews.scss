@@ -33,6 +33,7 @@
     margin-bottom: rem(15px);
     overflow: hidden;
     position: relative;
+    min-height: rem(300px);
     &::before{
         position: absolute;
         content: "";
@@ -55,10 +56,18 @@
 .reviews__display-inner{
     display: flex;
     align-items: center;
+    position: absolute;
+    opacity: 0;
 
     @include tablets{
         flex-direction: column;
         text-align: center;
+    }
+
+    &--active{
+        opacity: 1;
+        position: static;
+        pointer-events: unset;
     }
 }
 

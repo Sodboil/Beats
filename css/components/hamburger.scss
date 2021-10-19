@@ -16,3 +16,49 @@
     height: rem(4px);
     border-radius: rem(10px);
 }
+
+.hambuger--menu{
+    display: none;
+    
+
+    &--active{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #313131;
+        z-index: 99999;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+}}
+
+.menu__close{
+    position: absolute;
+    top: rem(42px);
+    right: rem(42px);
+}
+
+.close__icon{
+    fill: white;
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.hambuger--menu__item{
+    margin-bottom: rem(10px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.hambuger--menu__link{
+    text-decoration: none;
+    font-size: rem(36px);
+    color: white;  
+}
