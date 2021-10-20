@@ -1,8 +1,12 @@
 .modal{
     display: none;
+
+    &.fancybox-content {
+        padding: 0 !important;
+    }
 }
 .modal__container{
-    background: rgb(32, 27, 27);
+    background: white;
     padding: rem(35px) rem(60px);
     display: flex;
     flex-direction: column;

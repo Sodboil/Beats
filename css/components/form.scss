@@ -87,13 +87,17 @@
     }
 
     &:focus{
-        border-color: #E01F3D;
+        border-color: greenyellow;
         outline: none;
     }
 
     @include tablets{
         padding: rem(8px) rem(10px);
     }
+}
+
+.input-error{
+    border-color:red;
 }
 
 .form__controls{
@@ -177,4 +181,8 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.error-modal{
+    color: red;
 }
