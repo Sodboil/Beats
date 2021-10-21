@@ -28,3 +28,4 @@ $('.team__button').click(e => {
         openItem($this);
     }
 });
+

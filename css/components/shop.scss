@@ -1,5 +1,5 @@
 .shops__section{
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     background: #F8FAF9;
     position: relative;
@@ -62,8 +62,8 @@
 }
 
 .shop__icon{
-    width: 15px;
-    height: 29px;
+    width: rem(15px);
+    height: rem(29px);
 }
 
 .shops__container{
@@ -140,8 +140,8 @@
 
 .description__icon{
     position: absolute;
-    width: 42px;
-    height: 42px;
+    width: rem(42px);
+    height: rem(42px);
     fill: #fff;
     top: 50%;
     left: 50%;
@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    left: -99999px;
+    left: rem(-99999px);
     width: rem(273px);
     height: rem(294px);
     color: black;
@@ -162,7 +162,7 @@
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(40px);
-    padding: 25px;
+    padding: rem(25px);
 }
 
 .dropdown__item{
@@ -201,7 +201,7 @@
 }
 
 .description{
-    margin-bottom: 27px;
+    margin-bottom: rem(27px);
     padding: 0 12% 0 0;
 
     @include tablets{
@@ -219,7 +219,7 @@
 }
 
 .values__desc{
-    margin-right: 85px;
+    margin-right: rem(85px);
 
     &:last-child{
         margin-right: 0;}

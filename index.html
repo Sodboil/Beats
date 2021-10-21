@@ -15,19 +15,19 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hero__section">
+            <section data-theme="black" data-section-id="hero" class="hero__section">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./img/logo.png" alt="beats logo" class="logo">
                         <div class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Наушники</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Цвета</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="why" class="menu__link">О нас</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="shops" class="menu__link">Наушники</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="slider" class="menu__link">Цвета</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="map" class="menu__link">Контакты</a> </li>
                             </ul>
                         </div>
                         <a href="tel:+78009039090" class="phone-number hero__phone-number">
@@ -45,7 +45,7 @@
                     <div class="hero__main">
                         <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
                         <div class="hero__text">Встречайте новую версию наушников из линейки Powerbeats.</div>
-                        <a href="#" class="button">ЗАКАЗАТЬ</a>
+                        <a href="#" data-scroll-to="form" class="button">ЗАКАЗАТЬ</a>
                     </div>
                     <div class="hero_icons">
                         <ul class="features">
@@ -72,7 +72,7 @@
                 </div>
             </section>
 
-            <section class="why__section">
+            <section data-theme="black" data-section-id="why" class="why__section">
                 <div class="container why__container">
                     <div class="headline">
                         <div class="headline__title">почему beats solo 3?</div>
@@ -136,7 +136,7 @@
                 </div>
             </section>
 
-            <section class="shops__section">
+            <section data-theme="black" data-section-id="shops" class="shops__section">
                 <div class="container shops__container">
                     <div class="shop__slider">
                         <div class="shop__slider-arrows">
@@ -242,7 +242,7 @@
                                             </div>
                                             <div class="order">
                                                 <div class="price">14 990 ₽</div>
-                                                <a href="#" class="button">ЗАКАЗАТЬ</a>
+                                                <a href="#" data-scroll-to="form" class="button">ЗАКАЗАТЬ</a>
                                             </div>
                                         </div>
                                     </div>
@@ -337,7 +337,7 @@
                                             </div>
                                             <div class="order">
                                                 <div class="price">14 990 ₽</div>
-                                                <a href="#" class="button">ЗАКАЗАТЬ</a>
+                                                <a href="#" data-scroll-to="form" class="button">ЗАКАЗАТЬ</a>
                                             </div>
                                         </div>
                                     </div>
@@ -348,7 +348,7 @@
                 </div>
             </section>
 
-            <section class="team__section">
+            <section data-theme="black" data-section-id="team" class="team__section">
                 <div class="container team__container">
                     <div class="team__title">команда</div>
                     <ul class="team__version-desktop">
@@ -500,7 +500,7 @@
                 </div>
             </section>
 
-            <section class="slider__section">
+            <section data-theme="white" data-section-id="slider" class="slider__section">
                 <div class="slider__container">
                     <div class="slider__title">
                         <div class="slider__title-color">цвета</div>
@@ -569,7 +569,7 @@
 
             </section>
 
-            <section class="reviews__section">
+            <section data-theme="black" data-section-id="reviews" class="reviews__section">
                 <div class="container reviews__container">
                     <div class="reviews__title">отзывы</div>
                     <div class="reviews__content">
@@ -642,7 +642,7 @@
                 </div>
             </section>
 
-            <section class="video__section">
+            <section data-theme="black" data-section-id="video" class="video__section">
                 <div class="container video__container">
                     <div class="video__title">как мы работаем</div>
                     <div class="video__content">
@@ -651,7 +651,7 @@
                 </div>
             </section>
 
-            <section class="form__section">
+            <section data-theme="white" data-section-id="form" class="form__section">
                 <div class="container form__container">
                     <div class="form__title">закажите доставку</div>
                     <form class="form" id="form">
@@ -727,7 +727,7 @@
                 </div>
             </section>
 
-            <section class="map__section">
+            <section data-theme="black" data-section-id="map" class="map__section">
             
                 <div id="map" class="map"></div>
         
@@ -794,40 +794,40 @@
         </a>
         <ul class="hambuger--menu__list">
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">О нас</a>
+                <a href="#" data-scroll-to="why" class="hambuger--menu__link">О нас</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Наушники</a>
+                <a href="#" data-scroll-to="slider" class="hambuger--menu__link">Наушники</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Команда</a>
+                <a href="#" data-scroll-to="team" class="hambuger--menu__link">Команда</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Цены</a>
+                <a href="#" data-scroll-to="shops" class="hambuger--menu__link">Цены</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Отзывы</a>
+                <a href="#" data-scroll-to="reviews" class="hambuger--menu__link">Отзывы</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Как мы работаем</a>
+                <a href="#" data-scroll-to="video" class="hambuger--menu__link">Как мы работаем</a>
             </li>
             <li class="hambuger--menu__item">
-                <a href="#" class="hambuger--menu__link">Контакты</a>
+                <a href="#" data-scroll-to="map" class="hambuger--menu__link">Контакты</a>
             </li>
         </ul>   
     </div>
 
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item fixed-menu__item--active"> <a href="" data-scroll-to="hero" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="why" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="shops" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="team" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="slider" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="video" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="form" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="" data-scroll-to="map" class="fixed-menu__link"></a> </li>
         </ul>
     </nav>
 
@@ -836,6 +836,8 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
     <script src="scripts/shop.js"></script>
     <script src="scripts/tabs.js"></script>
     <script src="scripts/acco.js"></script>
@@ -843,6 +845,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/map.js"></script>
+    <script src="scripts/ops.js"></script>
 </body>
 
 </html>

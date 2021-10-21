@@ -1,5 +1,5 @@
 .slider__section {
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     background: url(../img/sport.png) 0 0 / 100% 100% no-repeat;
 
@@ -104,12 +104,12 @@
     display: block;
     color: white;
     width: 0;
-    padding: 0px;
+    padding: 0;
     opacity: 1;
     overflow: hidden;
     transition: width .3s ;
     background: rgba(51, 53, 55, 0.9);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(rem(10px));
 
    
 }
@@ -117,7 +117,7 @@
 
 .slider__menu__item--active > .slider__content{
         width: rem(520px);
-        padding-left: 38px;
+        padding-left: rem(38px);
         padding-top: rem(38px);
         padding-right: rem(53px);
         box-sizing: border-box;

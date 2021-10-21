@@ -32,8 +32,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -92,7 +101,7 @@ svg path {
 
 .hero__section {
   background-color: #F5F5F5;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   color: #292929;
   position: relative;
@@ -338,7 +347,7 @@ svg path {
 }
 
 .why__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   position: relative;
 }
@@ -497,7 +506,7 @@ svg path {
 }
 
 .shops__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   background: #F8FAF9;
   position: relative;
@@ -563,8 +572,8 @@ svg path {
 }
 
 .shop__icon {
-  width: 15px;
-  height: 29px;
+  width: 0.9375rem;
+  height: 1.8125rem;
 }
 
 .shops__container {
@@ -661,8 +670,8 @@ svg path {
 
 .description__icon {
   position: absolute;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   fill: #fff;
   top: 50%;
   left: 50%;
@@ -683,7 +692,7 @@ svg path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  left: -99999px;
+  left: -6249.9375rem;
   width: 17.0625rem;
   height: 18.375rem;
   color: black;
@@ -693,7 +702,7 @@ svg path {
           box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 .dropdown__item {
@@ -744,7 +753,7 @@ svg path {
 }
 
 .description {
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
   padding: 0 12% 0 0;
 }
 @media screen and (max-width: 768px) {
@@ -768,7 +777,7 @@ svg path {
 }
 
 .values__desc {
-  margin-right: 85px;
+  margin-right: 5.3125rem;
 }
 .values__desc:last-child {
   margin-right: 0;
@@ -800,7 +809,7 @@ svg path {
 }
 
 .video__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   background: #F8FAF9;
 }
@@ -849,7 +858,7 @@ svg path {
 }
 
 .team__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
 }
 
@@ -1009,7 +1018,7 @@ svg path {
 }
 
 .slider__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   background: url(../img/sport.png) 0 0/100% 100% no-repeat;
 }
@@ -1118,19 +1127,19 @@ svg path {
   display: block;
   color: white;
   width: 0;
-  padding: 0px;
+  padding: 0;
   opacity: 1;
   overflow: hidden;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
   background: rgba(51, 53, 55, 0.9);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.625rem);
+          backdrop-filter: blur(0.625rem);
 }
 
 .slider__menu__item--active > .slider__content {
   width: 32.5rem;
-  padding-left: 38px;
+  padding-left: 2.375rem;
   padding-top: 2.375rem;
   padding-right: 3.3125rem;
   -webkit-box-sizing: border-box;
@@ -1149,7 +1158,7 @@ svg path {
 }
 
 .reviews__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   position: relative;
 }
@@ -1336,7 +1345,7 @@ svg path {
 }
 
 .map__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   color: #292929;
   display: -webkit-box;
@@ -1447,7 +1456,7 @@ svg path {
 }
 
 .form__section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   background: url(../img/fonform.png);
   background-repeat: no-repeat;
@@ -1477,6 +1486,11 @@ svg path {
   margin-bottom: 3.625rem;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .form__title {
+    font-size: 2rem;
+  }
 }
 
 .form {
@@ -1550,6 +1564,11 @@ svg path {
 .form__input--textarea {
   height: 9.5rem;
   resize: none;
+}
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 5rem;
+  }
 }
 .form__input:focus {
   border-color: greenyellow;
@@ -1665,6 +1684,15 @@ svg path {
   top: 30%;
   right: 3%;
   z-index: 100;
+}
+.fixed-menu--white .fixed-menu__item--active .fixed-menu__link {
+  border-color: white;
+}
+.fixed-menu--white .fixed-menu__item--active .fixed-menu__link::before {
+  background: white;
+}
+.fixed-menu--white .fixed-menu__link::before {
+  background: white;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
